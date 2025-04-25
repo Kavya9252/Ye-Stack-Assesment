@@ -1,12 +1,21 @@
-# React + Vite
+Technical Assessment
+1. Create a React Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Use Vite to scaffold the project. Folder structure should be clean and modular.
 
-Currently, two official plugins are available:
+2. Features to Implement
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+a. Post Listing
+Fetch a list of posts from a public API like (https://jsonplaceholder.typicode.com/posts). Display the list of posts with,post,title and short description.
 
-## Expanding the ESLint configuration
+b. Post Details Page
+When a user clicks on a post, show full details in a separate route/page.Use React Router to handle routing.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+c. Add a New Post (Dummy)
+Provide a form with fields: Title, Body on submitting show the newly added post at the top of the list.You don’t need to send the data to the server.
+
+d. Edit Newly Added Post
+Add an "Edit" button next to each newly added post. Clicking should open the form pre-filled with existing data. On submit, update the local state to reflect changes.
+
+e. Search Functionality
+Search bar to filter posts by title (client-side)
